@@ -48,3 +48,5 @@ CREATE TABLE Docente_especialidade (
     FOREIGN KEY (especialidade_id) REFERENCES Especialidade(id)
     );
 
+SELECT * FROM Turma;
+SELECT * FROM `Estudante`;
