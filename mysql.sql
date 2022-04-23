@@ -50,3 +50,13 @@ CREATE TABLE Docente_especialidade (
 
 SELECT * FROM Turma;
 SELECT * FROM `Estudante`;
+SELECT * FROM `Docente`;
+SELECT
+    Docente.nome AS ProfessorResponsável,
+    Turma.nome AS NomeDaTurma,
+    Estudante.nome AS Aluno
+FROM Turma
+JOIN Docente
+ON Turma.id = Docente.turma_id
+JOIN Estudante
+ON Turma.id = Estudante.turma_id;
