@@ -9,7 +9,6 @@ Content-Type: application/json
 GET  http://localhost:3003/
 Content-Type: application/json
 ###
-
 PUT http://localhost:3003/turma/1650658151895
 Content-Type: application/json
 
@@ -17,21 +16,36 @@ Content-Type: application/json
     "modulo": 1
 }
 ###
-POST http://localhost:3003/estudante/1650657422722
+POST http://localhost:3003/estudante/1650658558755
 Content-Type: application/json
 
 {
-    "nome": "Enzo",
-    "email": "enzo@labenu",
+    "nome": "nati doida",
+    "email": "eftutgd45j2@labenu",
     "data_nasc": "02/04/2002"
 }
 ###
-GET  http://localhost:3003/estudante?nome="Eliel"
+GET  http://localhost:3003/estudante?nome="monica"
 Content-Type: application/json
 ###
-PUT http://localhost:3003/:id/:turmaId
+PUT http://localhost:3003/1650663597450/1650657454783
+Content-Type: application/json
+###
+POST http://localhost:3003/docente/1650657454783
 Content-Type: application/json
 
 {
-    "modulo": 1
+    "nome": "chijo",
+    "email": "chijo@labenu",
+    "data_nasc": "02/08/1990"
 }
+###
+GET  http://localhost:3003/docente
+Content-Type: application/json
+###
+PUT http://localhost:3003/docente/1650717355175/1650658558755
+Content-Type: application/json
+###
+GET  http://localhost:3003/turma
+Content-Type: application/json
+###
