@@ -9,7 +9,7 @@ import { integrantesTurma } from "./endpoints/integrantesTurma"
 import { mudarDocenteTurma } from "./endpoints/mudarDocenteTurma"
 import { mudarEstudanteTurma } from "./endpoints/mudarEstudanteTurma"
 import { mudarModulo } from "./endpoints/mudarModulo"
-
+// criar turma #
 app.post("/", criarTurma)
 
 app.get("/", buscarTurma)
